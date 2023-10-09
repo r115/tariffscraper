@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tariffscraper"
+version = "0.1.0"
+description = ""
+authors = ["Bernard Nandwa <bernard@nandwa.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "tariffscraper"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+pdfquery = "^0.4.3"
+
+[tool.poetry.scripts]
+tariffscraper = 'tariffscraper.cli.scraper:run'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
